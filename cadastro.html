@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Bem é Está - Saúde e Bem-Estar para a Terceira Idade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3a8ccf;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        img{
+            display: flex;
+            padding: 5px;
+            width: 7%;
+        }
+        form{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem é Está</h1>
+        <center>
+            <img src="Logo.png" alt="">    
+        </center>
+    
+        <p>Promovendo Saúde e Bem-Estar na Terceira Idade</p>
+        
+    </header>
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="#danca">Dança</a>
+        <a href="#reiki">Reiki</a>
+        <a href="#massagem">Massagem</a>
+        <a href="#esportes">Esportes</a>
+        <a href="cadastro.html">Cadastro</a>
+    </nav>
+    <br><br>
+    <center>
+        <form action="/cadastro" method="post">
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email de acesso</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastre-se</button>
+            </form>
+    </center>
+    <footer>
+        <p>&copy; 2023 Bem é Está - Saúde e Bem-Estar para a Terceira Idade</p>
+    </footer>
+</body>
+</html>

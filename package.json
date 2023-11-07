@@ -2,9 +2,10 @@
   "name": "ongbe",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "cadpro.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./cadpro.js localhost:3000"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,7 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
-    "mongoose": "^7.6.4"
+    "mongoose": "^7.6.4",
+    "nodemon": "^3.0.1"
   }
 }

@@ -33,23 +33,12 @@ const Usuario = mongoose.model("Usuario", UsuarioSchema);
 app.post("/cadastroProdutoRelogio", async (req, res) => {
     const { id_produtorelogio, descricao, marca, data_fabricacao, anos_garantia } = req.body;
 
-    function verificarAnosGarantia(anosGarantia) {
-        if (anosGarantia > 4) {
-            return "Limite de garantia excedido. Máximo 4 anos de garantia permitidos.";
-        } else if (anosGarantia <= 0) {
+        if (anos_garantia > 3) {
+            return "Limite de garantia excedido. Máximo 3 anos de garantia permitidos.";
+        } else if (anos_garantia <= 0) {
             return "Valor de anos de garantia inválido. Informe um valor positivo menor ou igual a 4.";
-        } else {
-            return "Cadastro permitido.";
-        }
-    }
+        } 
     
-const anosGarantia1 = 3; // Menor que 4, permitido
-const anosGarantia2 = 6; // Maior que 4, não permitido
-const anosGarantia3 = -2; // Menor ou igual a 0, não permitido
-
-console.log(verificarAnosGarantia(anosGarantia1)); // Saída: Cadastro permitido.
-console.log(verificarAnosGarantia(anosGarantia2)); // Saída: Limite de garantia excedido. Máximo 4 anos de garantia permitidos.
-console.log(verificarAnosGarantia(anosGarantia3)); // Saída: Valor de anos de garantia inválido. Informe um valor positivo menor ou igual a 4.
 
     const produtoRelogio = new ProdutoRelogio({
         id_produtorelogio,
